@@ -11,7 +11,7 @@ char board[ROWS][COLS];
 int main()
 {
     int col;
-    char currentPlayer = 'R';
+    char currentPlayer = 'R'; // TODO: Choisir le joueur qui commence
 
     initializeBoard();
 
