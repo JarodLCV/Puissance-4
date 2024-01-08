@@ -33,7 +33,7 @@ void displayBoard()
     }
     for (int j = 0; j < COLS; ++j)
     {
-        printf("----");
+        printf("| %d ", j);
     }
-    printf("\n");
+    printf("|\n");
 }

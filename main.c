@@ -24,20 +24,20 @@ int main()
 
         if (col < 0 || col >= COLS || board[0][col] != ' ')
         {
-            printf("Choix invalide. Réessayez.\n");
+            printf("Choix invalide. R%cessayez.\n", 130);
             continue;
         }
 
         if (!dropToken(col, currentPlayer))
         {
-            printf("Colonne pleine. Réessayez.\n");
+            printf("Colonne pleine. R%cessayez.\n", 130);
             continue;
         }
 
         if (checkWinner(currentPlayer))
         {
             displayBoard();
-            printf("\nJoueur %c a gagné !\n", currentPlayer);
+            printf("\nJoueur %c a gagn%c !\n", currentPlayer, 130);
             break;
         }
 
